@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: url(./images/image_geometry_1.svg);
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    width: 95vw;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+
+}
