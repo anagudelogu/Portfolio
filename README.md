@@ -9,6 +9,9 @@ This is a clone of Figma portfolio template 5.
 - Html
 - CSS
 
+## Getting Started
+
+There are no required installations to run this project.
 
 ## Authors
 
