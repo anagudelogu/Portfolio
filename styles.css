@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./images/image_geometry_1.svg);
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  width: 95vw;
+  height: 50px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section.hero {
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 30px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #1a2236;
+}
+
+.hero p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+button.bg-dark {
+  background-color: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero button.bg-dark {
+  height: 50px;
+}
+
+button.bg-dark:hover {
+  border: 1px solid #1a2236;
+  background-color: #fff;
+  color: #1a2236;
+}
+
+button.bg-dark:focus {
+  border: 2px solid #1a2236;
+}
