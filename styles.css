@@ -18,3 +18,59 @@ header {
     align-items: center;
 
 }
+
+section.hero {
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1A2236;
+}
+
+.hero p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+.hero button.bg-dark {
+    height: 50px;
+}
+
+button.bg-dark {
+    background-color: #1A2236;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+button.bg-dark:hover {
+    border: 1px solid #1A2236;
+    background-color: #FFFFFF;
+    color: #1A2236;
+}
+
+button.bg-dark:focus {
+    border: 2px solid #1A2236;
+}
