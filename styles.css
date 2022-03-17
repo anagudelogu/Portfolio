@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500&display=swap');
 
 * {
   box-sizing: border-box;
@@ -20,7 +20,6 @@ header {
   align-items: center;
 }
 
-
 /* Hero section */
 .hero-container {
   width: 90vw;
@@ -31,8 +30,6 @@ header {
   gap: 30px;
   margin: auto;
 }
-
-
 
 .title {
   font-family: 'Playfair Display', serif;
@@ -84,7 +81,6 @@ button.bg-dark:focus {
 
 /* Projects section */
 
-
 .projects-container {
   background-image: url(./images/projectsBackground.svg);
   background-repeat: no-repeat;
@@ -103,7 +99,7 @@ button.bg-dark:focus {
 .projects-cards-container {
   display: grid;
   background-color: #1a2236;
-  grid-template-rows: repeat(1fr, 6);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .project-card {
@@ -122,15 +118,14 @@ button.bg-dark:focus {
   height: 100%;
 }
 
-.projects-text h1 {
-  font-family: Poppins;
+.projects-text h3 {
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: 16px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-
 }
 
 .projects-text ul {
@@ -141,7 +136,7 @@ button.bg-dark:focus {
 }
 
 .projects-text li {
-  background-color: #98DEDE;
+  background-color: #98dede;
   color: #1a2236;
   padding: 6px 10.5px;
   font-family: 'Poppins', sans-serif;
@@ -149,9 +144,8 @@ button.bg-dark:focus {
   font-style: normal;
   font-weight: 300;
   line-height: 8px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-
 }
 
 .projects-button {
