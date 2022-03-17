@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Navigation section */
 header {
   display: flex;
   width: 95vw;
@@ -19,9 +20,11 @@ header {
   align-items: center;
 }
 
-section.hero {
+
+/* Hero section */
+.hero-container {
   width: 90vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -29,7 +32,9 @@ section.hero {
   margin: auto;
 }
 
-.hero h1 {
+
+
+.title {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-style: normal;
@@ -40,7 +45,7 @@ section.hero {
   color: #1a2236;
 }
 
-.hero p {
+.hero-container p {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -60,9 +65,10 @@ button.bg-dark {
   letter-spacing: 0;
   text-align: center;
   color: #fff;
+  border: 1px solid #fff;
 }
 
-.hero button.bg-dark {
+.hero-container button.bg-dark {
   height: 50px;
 }
 
@@ -74,4 +80,85 @@ button.bg-dark:hover {
 
 button.bg-dark:focus {
   border: 2px solid #1a2236;
+}
+
+/* Projects section */
+
+
+.projects-container {
+  background-image: url(./images/projectsBackground.svg);
+  background-repeat: no-repeat;
+}
+
+.projects-title-container {
+  display: flex;
+  height: 60vh;
+  width: 95vw;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 32px;
+  margin: 0 auto;
+}
+
+.projects-cards-container {
+  display: grid;
+  background-color: #1a2236;
+  grid-template-rows: repeat(1fr, 6);
+}
+
+.project-card {
+  display: flex;
+  color: #fff;
+  flex-flow: column;
+  height: 70vh;
+}
+
+.projects-text {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.projects-text h1 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.projects-text ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.projects-text li {
+  background-color: #98DEDE;
+  color: #1a2236;
+  padding: 6px 10.5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 8px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.projects-button {
+  display: flex;
+  height: 44px;
+  width: 178px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

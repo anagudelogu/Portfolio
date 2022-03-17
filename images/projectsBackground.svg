@@ -3,8 +3,8 @@
 <rect width="320" height="160" fill="#C4C4C4"/>
 </mask>
 <g mask="url(#mask0_67_1162)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M359.438 40.2573L319.5 80.2046L279.562 40.2573L319.5 0.310059L359.438 40.2573Z" fill="#E45865"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M359.438 40.2573L319.5 80.2046L279.562 40.2573L319.5 0.310059L359.438 40.2573Z" fill="url(#pattern0)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M359.437 40.2573L319.5 80.2046L279.562 40.2573L319.5 0.310059L359.437 40.2573Z" fill="#E45865"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M359.437 40.2573L319.5 80.2046L279.562 40.2573L319.5 0.310059L359.437 40.2573Z" fill="url(#pattern0)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M319.5 120.152C319.5 142.214 301.619 160.099 279.562 160.099H239.625V80.2046H279.562C301.619 80.2046 319.5 98.0896 319.5 120.152Z" fill="#E45865"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M319.5 120.152C319.5 142.214 301.619 160.099 279.562 160.099H239.625V80.2046H279.562C301.619 80.2046 319.5 98.0896 319.5 120.152Z" fill="url(#pattern1)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M299.132 120.152C299.132 131.183 290.192 140.125 279.163 140.125H259.194V120.152C259.194 109.121 268.135 100.178 279.163 100.178C290.192 100.178 299.132 109.121 299.132 120.152Z" fill="#98DEDE"/>
