@@ -178,7 +178,7 @@ button.bg-dark:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -206,10 +206,10 @@ button.bg-dark:focus {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  
 }
 
-.about-card h3, .about-card ul {
+.about-card h3,
+.about-card ul {
   width: 60%;
 }
 
@@ -219,7 +219,7 @@ button.bg-dark:focus {
   font-style: normal;
   font-weight: 800;
   line-height: 30px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #fff;
 }
@@ -236,22 +236,22 @@ button.bg-dark:focus {
   padding-left: 20px;
 }
 
-.about-card-container .bg-blue{
-  background-color: #1C528A;
+.about-card-container .bg-blue {
+  background-color: #1c528a;
   background-image: url(./images/ic_languages_mob.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 .about-card-container .bg-red {
-  background-color: #E2505C;
+  background-color: #e2505c;
   background-image: url(./images/ic_framework.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 .about-card-container .bg-yellow {
-  background-color: #FEBF52;
+  background-color: #febf52;
   background-image: url(./images/ic_skills.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;

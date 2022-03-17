@@ -11,8 +11,19 @@ This is a clone of Figma portfolio template 5.
 
 ## Getting Started
 
-There are no required installations to run this project.
+To run a local copy of this project follow these simple steps.
 
+### Prerequisites
+
+- Any web browser (e.g. Google Chrome)
+- Any Code Editor (e.g. Vscode)
+
+### Cloning the repository
+
+- Create a new folder.
+- Open your console in the new folder and run this command: `git clone https://github.com/anagudelogu/Portfolio.git`.
+- Open index.html file with your code editor, and run it with a live server extension.
+- You're done!
 ## Authors
 
 👤 **Andres Agudelo**
