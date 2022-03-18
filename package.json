@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,14 @@
   "homepage": "https://github.com/anagudelogu/Portfolio#readme",
   "devDependencies": {
     "hint": "^6.1.10",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "lint-staged": {
+    "*.css": "stylelint --fix"
   }
 }
