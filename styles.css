@@ -129,10 +129,18 @@ button.bg-dark:focus {
 }
 
 .projects-text ul {
-  display: flex;
+  /* display: flex;
   list-style: none;
   justify-content: flex-start;
-  gap: 15px;
+  gap: 15px; */
+}
+
+.html,
+.ruby,
+.js {
+  float: left;
+  list-style: none;
+  margin: 0 5px;
 }
 
 .projects-text li {
