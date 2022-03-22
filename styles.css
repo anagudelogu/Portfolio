@@ -62,11 +62,11 @@ button.bg-dark {
   letter-spacing: 0;
   text-align: center;
   color: #fff;
-  border: 1px solid #fff;
 }
 
 .hero-container button.bg-dark {
   height: 50px;
+  border: 1px solid #fff;
 }
 
 button.bg-dark:hover {
@@ -155,6 +155,7 @@ button.bg-dark:focus {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  border: 1px solid #fff;
 }
 
 /* About section */
@@ -255,4 +256,128 @@ button.bg-dark:focus {
   background-image: url(./images/ic_skills.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
+}
+
+/* Contact form section */
+
+.contact-section {
+  background-image: url(./images/image_geometry_3.svg);
+  background-repeat: no-repeat;
+  background-color: #f9f9fa;
+}
+
+.form-section {
+  height: 110vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+
+.form-section p {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  border: 1px #dfdfe0 solid;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  gap: 4px;
+  background-color: #fff;
+}
+
+form label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #7d7c84;
+}
+
+form input {
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+form textarea {
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-align: left;
+  width: 100%;
+  height: 7rem;
+  padding: 1rem;
+}
+
+.form-button {
+  height: 50px;
+  width: 100%;
+}
+
+/* Footer section */
+
+footer {
+  background-color: #1a2236;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 150px;
+}
+
+.footer-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  gap: 20px;
+  border: #1a2236;
+  padding: 1rem;
+  color: #92dcdc;
+  background-color: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
 }
