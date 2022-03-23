@@ -59,12 +59,16 @@ body {
 }
 
 /* Navigation section */
-header {
+.nav {
   display: flex;
   width: 95vw;
   height: 50px;
   justify-content: flex-end;
   align-items: center;
+}
+
+.nav__links {
+  display: none;
 }
 
 /* Hero section */
@@ -97,8 +101,6 @@ header {
 
 .projects-cards-container {
   display: grid;
-
-  /* background-color: #1a2236; */
   grid-template-rows: repeat(6, 1fr);
 }
 
@@ -294,9 +296,7 @@ form textarea {
 }
 
 /* Footer section */
-
 footer {
-  /* background-color: #1a2236; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -317,4 +317,44 @@ footer {
   display: flex;
   list-style: none;
   justify-content: space-around;
+}
+
+
+/* Desktop version */
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: none;
+  }
+
+  .nav {
+    width: 100%;
+    box-shadow: 0 0.5px #dddfe6;
+    height: 100px;
+  }
+
+  .nav__icon {
+    display: none;
+  }
+
+  .nav__links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+  }
+
+  .nav__link {
+    text-decoration: none;
+  }
+
+  .nav__link h2 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    color: #1a2236;
+  }
 }
