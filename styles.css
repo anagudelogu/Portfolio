@@ -90,7 +90,6 @@ body {
 
 .projects-title-container {
   display: flex;
-  height: 60vh;
   width: 95vw;
   justify-content: flex-start;
   align-items: flex-end;
@@ -100,7 +99,7 @@ body {
 
 .projects-cards-container {
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 300px repeat(6, 1fr);
 }
 
 .project-card {
@@ -322,6 +321,8 @@ footer {
   *::after,
   *::before {
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
   }
 
   body {
@@ -378,10 +379,10 @@ footer {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0;
     row-gap: 60px;
     column-gap: 0;
     max-height: 875px;
+    height: 100%;
   }
 
   .hero-container::after {
@@ -418,6 +419,97 @@ footer {
   .hero__button {
     grid-area: 3/1;
     max-width: 254px;
-    padding: 0;
   }
+
+  /* Projects section */
+
+  .projects-container {
+    background-image: none;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+
+  .projects-title-container {
+    height: auto;
+    width: 100%;
+    background-image: url(./images/image_dots.png);
+    background-position: top right;
+    grid-area: 1/1/2/3;
+  }
+
+  .projects__title {
+    transform: rotate(-90deg);
+    margin-bottom: 250px;
+  }
+
+  .projects-cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32.3% 1% 23.3% 11.1% 21.2% 11.1%;
+    grid-template-rows: 34% 5% 11.1% 5% 11.1% 17% 16.8%;
+  }
+
+  .project-card {
+    background: none;
+    width: auto;
+    height: auto;
+  }
+
+  .bg-none {
+    background: none;
+  }
+
+  .card1 {
+    grid-area: 1/3/2/7;
+  }
+
+  .card2 {
+    grid-area: 3/1/5/2;
+  }
+
+  .card3 {
+    grid-area: 5/1/7/4;
+  }
+
+  .card4 {
+    grid-area: 7/4/8/6;
+  }
+
+  .card5 {
+    grid-area: 4/5/6/7;
+  }
+
+  .card6 {
+    grid-area: 2/5/4/7;
+  }
+
+  .projects__bg1 {
+    background-image: url(./images/midGrid.svg);
+    grid-area: 2/2/5/5;
+    background-size: cover;
+  }
+
+  .projects__bg2 {
+    background-image: url(./images/rightGrid.svg);
+    grid-area: 6/4/7/7;
+    background-size: cover;
+  }
+
+  .projects__bg3 {
+    background-image: url(./images/bottomMidGrid.svg), url(./images/leftGrid.svg);
+    background-position: top right, top left;
+    grid-area: 7/1/8/4;
+  }
+
+  .project__image {
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .projects-text {
+    display: none;
+  }
+
+  /* About section */
 }
