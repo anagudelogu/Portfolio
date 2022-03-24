@@ -5,11 +5,11 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  background-repeat: no-repeat;
 }
 
 body {
   background-image: url(./images/image_geometry_1.svg);
-  background-repeat: no-repeat;
 }
 
 .bg-dark {
@@ -86,7 +86,6 @@ body {
 
 .projects-container {
   background-image: url(./images/projectsBackground.svg);
-  background-repeat: no-repeat;
 }
 
 .projects-title-container {
@@ -219,21 +218,18 @@ body {
 .about-card-container .bg-blue {
   background-color: #1c528a;
   background-image: url(./images/ic_languages_mob.svg);
-  background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 .about-card-container .bg-red {
   background-color: #e2505c;
   background-image: url(./images/ic_framework.svg);
-  background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
 .about-card-container .bg-yellow {
   background-color: #febf52;
   background-image: url(./images/ic_skills.svg);
-  background-repeat: no-repeat;
   background-position: 100% 100%;
 }
 
@@ -241,7 +237,6 @@ body {
 
 .contact-section {
   background-image: url(./images/image_geometry_3.svg);
-  background-repeat: no-repeat;
   background-color: #f9f9fa;
 }
 
@@ -323,8 +318,25 @@ footer {
 /* Desktop version */
 
 @media only screen and (min-width: 768px) {
+  *,
+  *::after,
+  *::before {
+    background-repeat: no-repeat;
+  }
+
   body {
     background-image: none;
+  }
+
+  .title {
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  .button {
+    font-size: 18px;
+    line-height: 27px;
+    height: 70px;
   }
 
   .nav {
@@ -356,5 +368,56 @@ footer {
     line-height: 24px;
     text-align: right;
     color: #1a2236;
+  }
+
+  /* HERO SECTION */
+  .hero-container {
+    display: grid;
+    grid-template-columns: 51% 49%;
+    grid-template-rows: auto auto 260px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    row-gap: 60px;
+    column-gap: 0;
+    max-height: 875px;
+  }
+
+  .hero-container::after {
+    content: '';
+    grid-area: 1/2/4/3;
+    background-image: url(./images/heroDeskBg.png);
+    background-position: right top;
+    background-size: cover;
+  }
+
+  .hero-container::before {
+    content: '';
+    grid-area: 1/1/4/2;
+    background-image: url(./images/image_dots.png);
+    background-position: bottom right;
+  }
+
+  .hero__grid__item {
+    max-width: 485px;
+    margin-left: 160px;
+  }
+
+  .hero__title {
+    grid-area: 1/1;
+    padding-top: 192px;
+    height: 412px;
+  }
+
+  .hero__text {
+    grid-area: 2/1;
+    height: 84px;
+  }
+
+  .hero__button {
+    grid-area: 3/1;
+    max-width: 254px;
+    padding: 0;
   }
 }
