@@ -302,6 +302,10 @@ footer {
   height: 150px;
 }
 
+.desk__btn {
+  display: none;
+}
+
 .footer-button {
   display: flex;
   justify-content: flex-start;
@@ -647,5 +651,26 @@ footer {
 
   .label_ta {
     display: block;
+  }
+
+  /* Footer section */
+  footer {
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 7.8rem;
+  }
+
+  .mob__btn {
+    display: none;
+  }
+
+  .desk__btn {
+    display: flex;
+  }
+
+  .social-list {
+    width: auto;
+    gap: 32px;
   }
 }
