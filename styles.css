@@ -248,6 +248,10 @@ body {
   margin-top: 50px;
 }
 
+.desk__para {
+  display: none;
+}
+
 .form-list {
   display: flex;
   flex-direction: column;
@@ -263,6 +267,10 @@ body {
   padding: 0.5rem 1rem;
   gap: 4px;
   background-color: #fff;
+}
+
+.label_ta {
+  display: none;
 }
 
 form label {
@@ -335,6 +343,7 @@ footer {
     font-size: 18px;
     line-height: 27px;
     height: 70px;
+    width: 16rem;
   }
 
   .nav {
@@ -415,7 +424,6 @@ footer {
 
   .hero__button {
     grid-area: 3/1;
-    max-width: 254px;
   }
 
   /* Projects section */
@@ -557,9 +565,87 @@ footer {
   }
 
   .about-button {
-    width: 60%;
     margin-top: 20px;
   }
 
   /* Contact section */
+
+  .form-section {
+    background-image: url(./images/contactBottomRight.svg), url(./images/contactTopLeft.svg);
+    background-position: bottom right, top left;
+    width: 100%;
+    height: 950px;
+    max-width: 1440px;
+    max-height: 950px;
+    display: block;
+    padding: 0;
+  }
+
+  .form-container {
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .form-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
+  }
+
+  .mob__para {
+    display: none;
+  }
+
+  .desk__para {
+    display: block;
+  }
+
+  .input1 {
+    grid-area: 1/1/2/2;
+  }
+
+  .input2 {
+    grid-area: 1/2/2/3;
+  }
+
+  .textarea1 {
+    grid-area: 2/1/3/3;
+  }
+
+  .button1 {
+    grid-area: 3/1/4/3;
+    margin: 0 auto;
+  }
+
+  .form-input {
+    border: none;
+    background: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .form-input input {
+    background-color: #fff;
+    width: 16rem;
+    border: 1px solid #e0e0e0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    height: 4rem;
+  }
+
+  .label_ta {
+    display: block;
+  }
 }
