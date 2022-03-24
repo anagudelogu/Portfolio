@@ -512,4 +512,59 @@ footer {
   }
 
   /* About section */
+
+  .about-container {
+    width: 80%;
+    max-width: 1440px;
+    max-height: 752px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 200px;
+  }
+
+  .about-title-container {
+    width: 50%;
+    height: 20rem;
+    order: 1;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 4rem;
+
+    /* gap: 30px; */
+  }
+
+  .about-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 578px;
+    max-width: 578px;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    background-image: url(./images/image_dots_with_teal.svg);
+    background-position: bottom right;
+  }
+
+  .about-card {
+    padding: 0;
+    height: 50rem;
+    width: 50%;
+    min-width: 250px;
+    max-height: 289px;
+    max-width: 289px;
+    margin: 0;
+  }
+
+  .about-button {
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  /* Contact section */
 }
