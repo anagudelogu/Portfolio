@@ -234,21 +234,18 @@ body {
 
 /* Contact form section */
 
-.contact-section {
+.form-section {
   background-image: url(./images/image_geometry_3.svg);
   background-color: #f9f9fa;
-}
-
-.form-section {
-  height: 110vh;
   width: 90vw;
+  height: 100%;
+  padding: 6rem 0 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  margin: 0 auto;
+  margin: auto auto;
   margin-top: 50px;
-  padding-top: 30px;
 }
 
 .form-list {
@@ -516,7 +513,6 @@ footer {
   .about-container {
     width: 80%;
     max-width: 1440px;
-    max-height: 752px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -540,10 +536,9 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-height: 578px;
     max-width: 578px;
     width: 50%;
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     gap: 0;
@@ -553,7 +548,7 @@ footer {
 
   .about-card {
     padding: 0;
-    height: 50rem;
+    height: 20rem;
     width: 50%;
     min-width: 250px;
     max-height: 289px;
