@@ -611,6 +611,7 @@ footer {
     height: 50px;
     width: 50%;
     margin-left: 5%;
+    justify-content: center;
   }
 
   .card1 {
@@ -783,7 +784,7 @@ footer {
 
   .form-input input {
     background-color: var(--white);
-    width: 16rem;
+    width: 100%;
     border: 1px solid #e0e0e0;
     padding: 0.5rem 1rem;
     border-radius: 4px;
