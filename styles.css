@@ -52,12 +52,15 @@ body {
   background-color: var(--darkblue);
   color: var(--white);
   border: 1px solid var(--white);
+  transition-property: background-color, color;
+  transition-duration: 0.5s, 0.5s;
 }
 
 .btn-bg-dark:hover {
   border: 1px solid var(--darkblue);
   background-color: var(--white);
   color: var(--darkblue);
+  cursor: pointer;
 }
 
 .btn-bg-dark:focus {
@@ -396,6 +399,13 @@ footer {
     line-height: 24px;
     text-align: right;
     color: var(--darkblue);
+    transition-property: font-size;
+    transition-duration: 0.3s;
+  }
+
+  .nav__link h2:hover {
+    font-size: 18px;
+    border-bottom: 2px var(--darkblue) solid;
   }
 
   /* HERO SECTION */
@@ -436,6 +446,8 @@ footer {
     grid-area: 1/1;
     padding-top: 192px;
     height: 412px;
+    animation-duration: 3s;
+    animation-name: test;
   }
 
   .hero__text {
@@ -482,6 +494,12 @@ footer {
     width: auto;
     height: auto;
     justify-content: flex-end;
+    transition-duration: 1s;
+  }
+
+  .project-card:hover {
+    transform: scale(1.1);
+    z-index: 100000;
   }
 
   .bg-none {
@@ -814,5 +832,23 @@ footer {
   .social-list {
     width: auto;
     gap: 32px;
+  }
+
+  .social-list li {
+    transition-duration: 0.5s;
+  }
+
+  .social-list li:hover {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes test {
+  from {
+    font-size: 130px;
+  }
+
+  to {
+    font-size: 110px;
   }
 }
