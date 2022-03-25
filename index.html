@@ -11,29 +11,35 @@
 
     <!-- Navigation section -->
     <header>
-        <nav><img src="./images/ic_menu.svg" alt="Menu" title="Menu"></nav>
+        <nav class="nav">
+            <img class="nav__icon" src="./images/ic_menu.svg" alt="Menu" title="Menu">
+            <ul class="nav__links">
+                <li><a href="#" class="nav__link"><h2>Home</h2></a></li>
+                <li><a href="#" class="nav__link"><h2>Portfolio</h2></a></li>
+                <li><a href="#" class="nav__link"><h2>About</h2></a></li>
+                <li><a href="#" class="nav__link"><h2>Contact</h2></a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero section -->
     <section class="hero-container">
-        <h1 class="title">Charlie Giorgania</h1>
-        <p>Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.<br>
+        <h1 class="hero__title hero__grid__item title">Charlie Giorgania</h1>
+        <p class="hero__text hero__grid__item paragraph">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.<br>
         If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
-        <button type="button" class="bg-dark">
+        <button type="button" class="hero__button hero__grid__item button btn-bg-dark">
             Start Collaboration
         </button>
-
-<!-- Projects section -->
     </section>
         
     <!-- Projects section -->
     <section class="projects-container">
-        <section class="projects-title-container">
-            <h2 class="title">Projects</h2>
-        </section>
         <section class="projects-cards-container">
-            <article class="project-card">
-                <img src="./images/firstProject.svg" alt="Project one" title="Project one">
+            <section class="projects-title-container">
+                <h2 class="projects__title title">Projects</h2>
+            </section>
+            <article class="project-card  bg-dark card1 bg-none project-featured">
+                <img class="project__image" src="./images/firstProject.svg" alt="Project one" title="Project one">
                 <div class="projects-text">
                     <h3>Project name goes here</h3>
                     <ul>
@@ -41,14 +47,14 @@
                         <li>Ruby on Rails</li>
                         <li>JavaScript</li>
                     </ul>
-                    <button class="projects-button bg-dark" type="button">
-                        See this project <img src="./images/Union.svg" alt="Arrow icon">
+                    <button class="button projects-button btn-bg-dark" type="button">
+                        See this project <img class="mob__arrowIcon" src="./images/Union.svg" alt="Arrow icon"><img class="desk__arrowIcon" src="./images/ic_arrow_right.svg" alt="Arrow icon">
                     </button>
                 </div>
             </article>
 
-            <article class="project-card">
-                <img src="./images/secondProject.svg" alt="Project two" title="Project two">
+            <article class="project-card bg-dark card2 bg-none">
+                <img class="project__image" src="./images/secondProject.svg" alt="Project two" title="Project two">
                 <div class="projects-text">
                     <h3>Project name goes here</h3>
                     <ul>
@@ -56,13 +62,13 @@
                         <li>Ruby on Rails</li>
                         <li>JavaScript</li>
                     </ul>
-                    <button class="projects-button bg-dark" type="button">
+                    <button class="button projects-button btn-bg-dark" type="button">
                         See this project <img src="./images/Union.svg" alt="Arrow icon">
                     </button>
                 </div>
             </article>
-            <article class="project-card">
-                <img src="./images/thirdProject.svg" alt="Project three" title="Project three">
+            <article class="project-card bg-dark card3 bg-none">
+                <img class="project__image" src="./images/thirdProject.svg" alt="Project three" title="Project three">
                 <div class="projects-text">
                     <h3>Project name goes here</h3>
                     <ul>
@@ -70,13 +76,13 @@
                         <li>Ruby on Rails</li>
                         <li>JavaScript</li>
                     </ul>
-                    <button class="projects-button bg-dark" type="button">
+                    <button class="button projects-button btn-bg-dark" type="button">
                         See this project <img src="./images/Union.svg" alt="Arrow icon">
                     </button>
                 </div>
             </article>
-            <article class="project-card">
-                <img src="./images/fourthProject.svg" alt="Project four" title="Project four">
+            <article class="project-card bg-dark card4 bg-none">
+                <img class="project__image" src="./images/fourthProject.svg" alt="Project four" title="Project four">
                 <div class="projects-text">
                     <h3>Project name goes here</h3>
                     <ul>
@@ -84,13 +90,13 @@
                         <li>Ruby on Rails</li>
                         <li>JavaScript</li>
                     </ul>
-                    <button class="projects-button bg-dark" type="button">
+                    <button class="button projects-button btn-bg-dark" type="button">
                         See this project <img src="./images/Union.svg" alt="Arrow icon">
                     </button>
                 </div>
             </article>
-            <article class="project-card">
-                <img src="./images/fifthProject.svg" alt="Project five" title="Project five">
+            <article class="project-card bg-dark card5 bg-none">
+                <img class="project__image" src="./images/fifthProject.svg" alt="Project five" title="Project five">
                 <div class="projects-text">
                     <h3>Project name goes here</h3>
                     <ul>
@@ -98,25 +104,30 @@
                         <li>Ruby on Rails</li>
                         <li>JavaScript</li>
                     </ul>
-                    <button class="projects-button bg-dark" type="button">
+                    <button class="button projects-button btn-bg-dark" type="button">
                         See this project <img src="./images/Union.svg" alt="Arrow icon">
                     </button>
                 </div>
             </article>
-            <article class="project-card">
-                <img src="./images/sixthProject.svg" alt="Project six" title="Project six">
+            <article class="project-card bg-dark card6 bg-none project-6">
+                <img class="project__image" src="./images/sixthProject.svg" alt="Project six" title="Project six">
                 <div class="projects-text">
-                    <h3>Project name goes here</h3>
+                    <h3 class="mob__title">Project name goes here</h3>
+                    <h3 class="desk__title">Project name goes...</h3>
                     <ul>
                         <li>HTML/CSS</li>
                         <li>Ruby on Rails</li>
-                        <li>JavaScript</li>
+                        <li class="mob__js">JavaScript</li>
+                        <li class="desk__js">+1</li>
                     </ul>
-                    <button class="projects-button bg-dark" type="button">
-                        See this project <img src="./images/Union.svg" alt="Arrow icon">
+                    <button class="button projects-button btn-bg-dark" type="button">
+                        See this project <img src="./images/Union.svg" alt="Arrow icon"><img class="desk__arrowIcon" src="./images/ic_arrow_right.svg" alt="Arrow icon">
                     </button>
                 </div>
             </article>
+            <div class="projects__bg1"></div>
+            <div class="projects__bg2"></div>
+            <div class="projects__bg3"></div>
         </section>
     </section>
 
@@ -124,10 +135,10 @@
     <section class="about-container">
         <section class="about-title-container">
             <h2 class="title">About</h2>
-            <p class="about-paragraph">
+            <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod
             </p>
-            <button type="button" class="about-button bg-dark">
+            <button type="button" class="button about-button btn-bg-dark">
                 Get my CV <img src="./images/ic_download.svg" alt="Download icon">
             </button>
         </section>
@@ -165,46 +176,50 @@
     </section>
 
     <!-- Contact section -->
-    <section class="contact-section">
-        <section class="form-section">
+    <section class="form-section">
+        <section class="form-container">
             <h3 class="title">
                 Get started
             </h3>
-            <p class="form-header-para">
+            <p class="mob__para paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <p class="desk__para paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p>
             <form action="https://formspree.io/f/moqrlovr" method="post">
                 <ul class="form-list">
-                    <li class="form-input">
+                    <li class="form-input input1">
                         <label for="name"> Your name</label>
-                        <input type="text" id="name" name="name" maxlength="30" required placeholder="Anastasiia">
-                        
+                        <input class="paragraph" type="text" id="name" name="name" maxlength="30" required placeholder="Anastasiia">
                     </li>
-    
-                    <li class="form-input">
+
+                    <li class="form-input input2">
                         <label for="email"> Your email</label>
-                        <input type="email" id="email" name="email" required placeholder="example@example.com">
-                        
+                        <input class="paragraph" type="email" id="email" name="email" required placeholder="example@example.com">  
                     </li>
-    
-                    <li>
-                        <textarea name="text" cols="30" rows="10" maxlength="500" placeholder="Enter your message here..." required></textarea>
+
+                    <li class="textarea1">
+                        <label class="label_ta" for="textarea">Message</label>
+                        <textarea id="textarea" class="paragraph" name="text" cols="30" rows="10" maxlength="500" placeholder="Enter your message here..." required></textarea>
                     </li>
-    
-                    <li>
-                        <button class="form-button bg-dark" type="submit">
+
+                    <li class="button1">
+                        <button class="button form-button btn-bg-dark" type="submit">
                             Start collaboration
                         </button>
                     </li>
                 </ul>
             </form>
-        </section>
+         </section>
     </section>
-
     <!-- Footer section -->
-    <footer>
-        <button class="footer-button" type="button">
+    <footer class="bg-dark"> 
+        <button class="mob__btn button footer-button btn-bg-dark" type="button">
             Get my Resume <img src="./images/cv-icon.svg" alt="Get my resume icon">
+        </button>
+        <button class="desk__btn button footer-button btn-bg-dark" type="button">
+            Get my CV <img src="./images/ic-link_teal.svg" alt="Get my cv icon">
         </button>
         <ul class="social-list">
             <li><a href="#"><img src="./images/ic_stackoverflow.svg" alt="Stackoverflow icon"></a></li>
