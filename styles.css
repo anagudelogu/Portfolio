@@ -8,12 +8,18 @@
   background-repeat: no-repeat;
 }
 
+:root {
+  --flex: flex;
+  --darkblue: #1a2236;
+  --white: #fff;
+}
+
 body {
   background-image: url(./images/image_geometry_1.svg);
 }
 
 .bg-dark {
-  background-color: #1a2236;
+  background-color: var(--darkblue);
 }
 
 .title {
@@ -22,7 +28,7 @@ body {
   font-weight: 400;
   line-height: 50px;
   text-align: left;
-  color: #1a2236;
+  color: var(--darkblue);
 }
 
 .paragraph {
@@ -43,24 +49,24 @@ body {
 }
 
 .btn-bg-dark {
-  background-color: #1a2236;
-  color: #fff;
-  border: 1px solid #fff;
+  background-color: var(--darkblue);
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 
 .btn-bg-dark:hover {
-  border: 1px solid #1a2236;
-  background-color: #fff;
-  color: #1a2236;
+  border: 1px solid var(--darkblue);
+  background-color: var(--white);
+  color: var(--darkblue);
 }
 
 .btn-bg-dark:focus {
-  border: 2px solid #1a2236;
+  border: 2px solid var(--darkblue);
 }
 
 /* Navigation section */
 .nav {
-  display: flex;
+  display: var(--flex);
   width: 95vw;
   height: 50px;
   justify-content: flex-end;
@@ -75,7 +81,7 @@ body {
 .hero-container {
   width: 90vw;
   height: 90vh;
-  display: flex;
+  display: var(--flex);
   flex-flow: column;
   justify-content: center;
   gap: 30px;
@@ -89,7 +95,7 @@ body {
 }
 
 .projects-title-container {
-  display: flex;
+  display: var(--flex);
   width: 95vw;
   justify-content: flex-start;
   align-items: flex-end;
@@ -103,14 +109,14 @@ body {
 }
 
 .project-card {
-  display: flex;
-  color: #fff;
+  display: var(--flex);
+  color: var(--white);
   flex-flow: column;
   height: 70vh;
 }
 
 .projects-text {
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
   width: 90vw;
   margin: 0 auto;
@@ -126,7 +132,7 @@ body {
 }
 
 .projects-text ul {
-  display: flex;
+  display: var(--flex);
   list-style: none;
   justify-content: flex-start;
   gap: 15px;
@@ -134,7 +140,7 @@ body {
 
 .projects-text li {
   background-color: #98dede;
-  color: #1a2236;
+  color: var(--darkblue);
   padding: 6px 10.5px;
   font-size: 10px;
   font-weight: 300;
@@ -143,7 +149,7 @@ body {
 }
 
 .projects-button {
-  display: flex;
+  display: var(--flex);
   height: 44px;
   width: 178px;
   justify-content: center;
@@ -159,7 +165,7 @@ body {
 }
 
 .about-title-container {
-  display: flex;
+  display: var(--flex);
   height: 60vh;
   flex-flow: column;
   justify-content: space-around;
@@ -167,7 +173,7 @@ body {
 }
 
 .about-button {
-  display: flex;
+  display: var(--flex);
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -176,7 +182,7 @@ body {
 /* About cards */
 
 .about-card-container {
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
   gap: 1rem;
   margin-top: 40px;
@@ -184,7 +190,7 @@ body {
 
 .about-card {
   height: 60vh;
-  display: flex;
+  display: var(--flex);
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -201,7 +207,7 @@ body {
   font-weight: 800;
   line-height: 30px;
   text-align: left;
-  color: #fff;
+  color: var(--white);
 }
 
 .about-card ul {
@@ -210,7 +216,7 @@ body {
   line-height: 27px;
   letter-spacing: -0.0525em;
   text-align: left;
-  color: #fff;
+  color: var(--white);
   padding-left: 20px;
 }
 
@@ -240,7 +246,7 @@ body {
   width: 90vw;
   height: 100%;
   padding: 6rem 0 5rem 0;
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -253,20 +259,20 @@ body {
 }
 
 .form-list {
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
   gap: 8px;
   list-style: none;
 }
 
 .form-input {
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
   border: 1px #dfdfe0 solid;
   border-radius: 4px;
   padding: 0.5rem 1rem;
   gap: 4px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .label_ta {
@@ -286,7 +292,7 @@ form input {
 }
 
 form textarea {
-  background: #fff;
+  background: var(--white);
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   width: 100%;
@@ -296,7 +302,7 @@ form textarea {
 
 /* Footer section */
 footer {
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
   justify-content: space-evenly;
   height: 150px;
@@ -307,7 +313,7 @@ footer {
 }
 
 .footer-button {
-  display: flex;
+  display: var(--flex);
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
@@ -317,7 +323,7 @@ footer {
 }
 
 .social-list {
-  display: flex;
+  display: var(--flex);
   list-style: none;
   justify-content: space-around;
 }
@@ -361,7 +367,7 @@ footer {
 
   .nav__links {
     width: 100%;
-    display: flex;
+    display: var(--flex);
     justify-content: center;
     gap: 50px;
     list-style: none;
@@ -377,7 +383,7 @@ footer {
     font-weight: 400;
     line-height: 24px;
     text-align: right;
-    color: #1a2236;
+    color: var(--darkblue);
   }
 
   /* HERO SECTION */
@@ -443,7 +449,7 @@ footer {
     width: 100%;
     background-image: url(./images/image_dots.png);
     background-position: top right;
-    grid-area: 1/1/2/3;
+    grid-area: 1/1/2/2;
   }
 
   .projects__title {
@@ -454,8 +460,12 @@ footer {
   .projects-cards-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 32.3% 1% 23.3% 11.1% 21.2% 11.1%;
-    grid-template-rows: 34% 5% 11.1% 5% 11.1% 17% 16.8%;
+    grid-template-columns: 32.3% 1% 23.27% 11.12% 21.19% 11.12%;
+    grid-template-rows: 33.9612% 4.8691% 11.5642% 4.8691% 11.5642% 16.7376% 16.4333%;
+
+    /* grid-template-columns: 465px 15px 335px 160px 305px 160px;
+    grid-template-rows: 558px 80px 190px 80px 190px 275px 270px; */
+    max-height: 1643px;
   }
 
   .project-card {
@@ -512,7 +522,6 @@ footer {
 
   .project__image {
     width: 100%;
-    object-fit: fill;
   }
 
   .projects-text {
@@ -525,7 +534,7 @@ footer {
     width: 80%;
     max-width: 1440px;
     margin: 0 auto;
-    display: flex;
+    display: var(--flex);
     justify-content: center;
     align-items: flex-start;
     margin-top: 200px;
@@ -544,7 +553,7 @@ footer {
   }
 
   .about-card-container {
-    display: flex;
+    display: var(--flex);
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 578px;
@@ -588,7 +597,7 @@ footer {
     width: 40%;
     height: 100%;
     margin: 0 auto;
-    display: flex;
+    display: var(--flex);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -640,7 +649,7 @@ footer {
   }
 
   .form-input input {
-    background-color: #fff;
+    background-color: var(--white);
     width: 16rem;
     border: 1px solid #e0e0e0;
     padding: 0.5rem 1rem;
@@ -665,7 +674,7 @@ footer {
   }
 
   .desk__btn {
-    display: flex;
+    display: var(--flex);
   }
 
   .social-list {
