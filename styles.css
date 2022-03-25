@@ -456,25 +456,25 @@ footer {
     margin-top: 200px;
   }
 
-  .projects-title-container {
-    height: auto;
-    width: 100%;
-    background-image: url(./images/image_dots.png);
-    background-position: top right;
-    grid-area: 1/1/2/2;
-  }
-
-  .projects__title {
-    transform: rotate(-90deg);
-    margin-bottom: 250px;
-  }
-
   .projects-cards-container {
     width: 100%;
     display: grid;
     grid-template-columns: 32.3% 1% 23.27% 11.12% 21.19% 11.12%;
     grid-template-rows: 33.9622% 4.8691% 11.5642% 4.8691% 11.5642% 16.7376% 16.4333%;
     max-height: 1643px;
+  }
+
+  .projects__title {
+    transform: rotate(-90deg);
+    margin-bottom: 200px;
+  }
+
+  .projects-title-container {
+    height: auto;
+    width: 100%;
+    background-image: url(./images/image_dots.png);
+    background-position: top right;
+    grid-area: 1/1/2/2;
   }
 
   .project-card {
