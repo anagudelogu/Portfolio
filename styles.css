@@ -376,7 +376,17 @@ footer {
     height: 100px;
   }
 
+  .nav__icon {
+    display: none;
+  }
+
   .nav__links {
+    width: 100%;
+    display: var(--flex);
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+
     margin-left: 100px;
     animation-duration: 3s;
     animation-name: nav__link;
@@ -384,7 +394,7 @@ footer {
     transition: all 0.9s ease-in-out;
   }
 
-  @keyframes nav__link {
+    @keyframes nav__link {
     from {
       margin-left: 100%;
       width: 100%;
@@ -398,19 +408,7 @@ footer {
       /* height: 30%; */
       overflow: hidden;
     }
-  } 
-
-  .nav__icon {
-    display: none;
-  }
-
-  .nav__links {
-    width: 100%;
-    display: var(--flex);
-    justify-content: center;
-    gap: 50px;
-    list-style: none;
-  }
+} 
 
   .nav__link {
     text-decoration: none;
