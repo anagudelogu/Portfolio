@@ -386,7 +386,6 @@ footer {
     justify-content: center;
     gap: 50px;
     list-style: none;
-
     margin-left: 100px;
     animation-duration: 3s;
     animation-name: nav__link;
@@ -395,24 +394,21 @@ footer {
   }
 
     @keyframes nav__link {
-    from {
+  from {
       margin-left: 100%;
       width: 100%;
       overflow: hidden;
     }
-
     to {
       margin-left: 0%;
       width: 100%;
-
-      /* height: 30%; */
       overflow: hidden;
     }
 } 
 
   .nav__link {
     text-decoration: none;
-  }
+}
 
   .nav__link h2 {
     font-size: 16px;
