@@ -393,22 +393,23 @@ footer {
     transition: all 0.9s ease-in-out;
   }
 
-    @keyframes nav__link {
-  from {
+  @keyframes nav__link {
+    from {
       margin-left: 100%;
       width: 100%;
       overflow: hidden;
     }
+
     to {
       margin-left: 0%;
       width: 100%;
       overflow: hidden;
     }
-} 
+  }
 
   .nav__link {
     text-decoration: none;
-}
+  }
 
   .nav__link h2 {
     font-size: 16px;
