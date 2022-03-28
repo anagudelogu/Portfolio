@@ -389,7 +389,6 @@ footer {
     margin-left: 100px;
     animation-duration: 3s;
     animation-name: nav__link;
-    animation-iteration-count: 2;
     transition: all 0.9s ease-in-out;
   }
 
