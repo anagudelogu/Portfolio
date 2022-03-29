@@ -408,9 +408,6 @@ footer {
 
   .nav__link {
     text-decoration: none;
-  }
-
-  .nav__link h2 {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -421,7 +418,7 @@ footer {
     transition-duration: 0.3s;
   }
 
-  .nav__link h2:hover {
+  .nav__link:hover {
     font-size: 18px;
     border-bottom: 2px var(--darkblue) solid;
   }
