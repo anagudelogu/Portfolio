@@ -70,15 +70,37 @@ body {
 /* Navigation section */
 .nav {
   display: var(--flex);
-  width: 95vw;
+
+  /* width: 95vw; */
   height: 50px;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
 }
 
-.nav__links {
+/* .nav__links {
   display: none;
+} */
+.nav__links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: red;
+  width: 100%;
+  top: 40px;
 }
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+/* .nav__close {
+  display: none;
+} */
 
 /* Hero section */
 .hero-container {
@@ -376,7 +398,7 @@ footer {
     height: 100px;
   }
 
-  .nav__icon {
+  .nav__hamburguer {
     display: none;
   }
 
