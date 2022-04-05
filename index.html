@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Charlie Giorgania's Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -12,18 +12,22 @@
     <!-- Navigation section -->
     <header>
         <nav class="nav">
-            <img class="nav__icon" src="./images/ic_menu.svg" alt="Menu" title="Menu">
+            <div class="nav__icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul class="nav__links">
-                <li><a href="#" class="nav__link"><h2>Home</h2></a></li>
-                <li><a href="#" class="nav__link"><h2>Portfolio</h2></a></li>
-                <li><a href="#" class="nav__link"><h2>About</h2></a></li>
-                <li><a href="#" class="nav__link"><h2>Contact</h2></a></li>
+                <li><a href="#hero" class="nav__link">Home</a></li>
+                <li><a href="#projects" class="nav__link">Portfolio</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero section -->
-    <section class="hero-container">
+    <section id="hero" class="hero-container">
         <h1 class="hero__title hero__grid__item title">Charlie Giorgania</h1>
         <p class="hero__text hero__grid__item paragraph">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.<br>
         If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
@@ -33,8 +37,8 @@
     </section>
         
     <!-- Projects section -->
-    <section class="projects-container">
-        <section class="projects-cards-container">
+    <section id="projects" class="projects-container">
+        <div class="projects-cards-container">
             <section class="projects-title-container">
                 <h2 class="projects__title title">Projects</h2>
             </section>
@@ -128,11 +132,11 @@
             <div class="projects__bg1"></div>
             <div class="projects__bg2"></div>
             <div class="projects__bg3"></div>
-        </section>
+        </div>
     </section>
 
     <!-- About section -->
-    <section class="about-container">
+    <section id="about" class="about-container">
         <section class="about-title-container">
             <h2 class="title">About</h2>
             <p class="paragraph">
@@ -176,11 +180,11 @@
     </section>
 
     <!-- Contact section -->
-    <section class="form-section">
-        <section class="form-container">
-            <h3 class="title">
+    <section id="contact" class="form-section">
+        <div class="form-container">
+            <h2 class="title">
                 Get started
-            </h3>
+            </h2>
             <p class="mob__para paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
             </p>
@@ -211,8 +215,9 @@
                     </li>
                 </ul>
             </form>
-         </section>
+        </div>
     </section>
+
     <!-- Footer section -->
     <footer class="bg-dark"> 
         <button class="mob__btn button footer-button btn-bg-dark" type="button">
@@ -230,5 +235,6 @@
             <li><a href="#"><img src="./images/ic_angellist.svg" alt="Angellist icon"></a></li>
         </ul>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

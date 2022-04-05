@@ -18,6 +18,10 @@ body {
   background-image: url(./images/image_geometry_1.svg);
 }
 
+.noScroll {
+  overflow-y: hidden;
+}
+
 .bg-dark {
   background-color: var(--darkblue);
 }
@@ -70,25 +74,79 @@ body {
 /* Navigation section */
 .nav {
   display: var(--flex);
-  width: 95vw;
   height: 50px;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
+}
+
+.nav__icon {
+  margin-right: 20px;
+  z-index: 999;
+  position: fixed;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #1a2236;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__icon.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav__icon.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .nav__links {
+  position: fixed;
+  transform: translateX(-100%);
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/mobMenuTop.svg), url(./images/mobMenuBottom.svg);
+  background-position: top left, bottom left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.nav__links.active {
+  transform: translateX(0);
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__close {
   display: none;
 }
 
 /* Hero section */
 .hero-container {
-  width: 90vw;
+  width: 85%;
   height: 90vh;
   display: var(--flex);
   flex-flow: column;
   justify-content: center;
   gap: 30px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Projects section */
@@ -145,7 +203,7 @@ body {
   display: none;
 }
 
-.dek__js {
+.desk__js {
   display: none;
 }
 
@@ -258,15 +316,17 @@ body {
 .form-section {
   background-image: url(./images/image_geometry_3.svg);
   background-color: #f9f9fa;
+  margin-top: 50px;
+}
+
+.form-container {
   width: 90vw;
-  height: 100%;
   padding: 6rem 0 5rem 0;
   display: var(--flex);
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  margin: auto auto;
-  margin-top: 50px;
+  margin: 0 auto;
 }
 
 .desk__para {
@@ -374,6 +434,8 @@ footer {
     width: 100%;
     box-shadow: 0 0.5px #dddfe6;
     height: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .nav__icon {
@@ -385,11 +447,16 @@ footer {
     display: var(--flex);
     justify-content: center;
     gap: 50px;
+    height: 50px;
+    flex-direction: row;
     list-style: none;
     margin-left: 100px;
     animation-duration: 3s;
     animation-name: nav__link;
     transition: all 0.9s ease-in-out;
+    background: none;
+    transform: translateX(0);
+    position: static;
   }
 
   @keyframes nav__link {
@@ -408,9 +475,6 @@ footer {
 
   .nav__link {
     text-decoration: none;
-  }
-
-  .nav__link h2 {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -421,7 +485,7 @@ footer {
     transition-duration: 0.3s;
   }
 
-  .nav__link h2:hover {
+  .nav__link:hover {
     font-size: 18px;
     border-bottom: 2px var(--darkblue) solid;
   }
@@ -693,7 +757,9 @@ footer {
   }
 
   .projects__bg3 {
-    background-image: url(./images/bottomMidGrid.svg), url(./images/leftGrid.svg);
+    background-image:
+      url(./images/bottomMidGrid.svg),
+      url(./images/leftGrid.svg);
     background-position: top right, top left;
     grid-area: 7/1/8/4;
   }
@@ -753,7 +819,9 @@ footer {
   /* Contact section */
 
   .form-section {
-    background-image: url(./images/contactBottomRight.svg), url(./images/contactTopLeft.svg);
+    background-image:
+      url(./images/contactBottomRight.svg),
+      url(./images/contactTopLeft.svg);
     background-position: bottom right, top left;
     width: 100%;
     height: 950px;
@@ -761,6 +829,7 @@ footer {
     max-height: 950px;
     display: block;
     padding: 0;
+    margin: 50px auto 0;
   }
 
   .form-container {
@@ -837,6 +906,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 7.8rem;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .mob__btn {
