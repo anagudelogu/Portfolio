@@ -70,19 +70,25 @@ body {
 /* Navigation section */
 .nav {
   display: var(--flex);
-
-  /* width: 95vw; */
   height: 50px;
   justify-content: flex-end;
   align-items: center;
   position: relative;
 }
- .showMenu {
-    transform: translateY(0);
-  }
+
+.nav__icon {
+  margin-right: 20px;
+  z-index: 100;
+}
+
+.showMenu {
+  height: 100vh;
+  background-image: url(./images/mobMenuTop.svg), url(./images/mobMenuBottom.svg);
+  background-position: top left, bottom left;
+  transform: translateY(-40px);
+}
 
 .nav__links {
-  transform: translateY(-100);
   position: absolute;
   display: none;
   flex-direction: column;
@@ -716,7 +722,8 @@ footer {
   }
 
   .projects__bg3 {
-    background-image: url(./images/bottomMidGrid.svg),
+    background-image:
+      url(./images/bottomMidGrid.svg),
       url(./images/leftGrid.svg);
     background-position: top right, top left;
     grid-area: 7/1/8/4;
@@ -777,7 +784,8 @@ footer {
   /* Contact section */
 
   .form-section {
-    background-image: url(./images/contactBottomRight.svg),
+    background-image:
+      url(./images/contactBottomRight.svg),
       url(./images/contactTopLeft.svg);
     background-position: bottom right, top left;
     width: 100%;
