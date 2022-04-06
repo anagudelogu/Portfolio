@@ -362,6 +362,10 @@ form label {
   color: #7d7c84;
 }
 
+form label span {
+  color: red;
+}
+
 form input {
   border: none;
 }
