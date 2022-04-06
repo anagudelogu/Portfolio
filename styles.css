@@ -199,11 +199,20 @@ body {
   gap: 15px;
 }
 
-.desk__title {
-  display: none;
+.about-card h3,
+.about-card ul {
+  width: 60%;
 }
 
-.desk__js {
+.about-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+  text-align: left;
+  color: var(--white);
+}
+
+.projects-cards-container :nth-child(7) h3:nth-child(2) {
   display: none;
 }
 
@@ -217,6 +226,10 @@ body {
   text-align: left;
 }
 
+.projects-cards-container :nth-child(7) li:nth-child(4) {
+  display: none;
+}
+
 .desk__arrowIcon {
   display: none;
 }
@@ -228,6 +241,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.project-card:nth-child(8),
+.project-card:nth-child(9),
+.project-card:nth-child(10) {
+  display: none;
 }
 
 /* About section */
@@ -268,19 +287,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
-
-.about-card h3,
-.about-card ul {
-  width: 60%;
-}
-
-.about-card h3 {
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 30px;
-  text-align: left;
-  color: var(--white);
 }
 
 .about-card ul {
@@ -584,10 +590,6 @@ footer {
     z-index: 100000;
   }
 
-  .bg-none {
-    background: none;
-  }
-
   .project__image {
     max-width: 100%;
     max-height: 100%;
@@ -645,6 +647,12 @@ footer {
     border: 2px solid var(--white);
   }
 
+  .project-card:nth-child(8),
+  .project-card:nth-child(9),
+  .project-card:nth-child(10) {
+    display: block;
+  }
+
   .desk__arrowIcon {
     display: block;
   }
@@ -659,11 +667,11 @@ footer {
     margin-left: 10%;
   }
 
-  .project-6 .project__image {
+  .project-card:nth-child(7) .project__image {
     display: none;
   }
 
-  .project-6 .projects-text {
+  .project-card:nth-child(7) .projects-text {
     display: var(--flex);
     width: 100%;
     height: 81%;
@@ -671,92 +679,92 @@ footer {
     opacity: 0.98;
   }
 
-  .mob__title {
-    display: none;
-  }
-
-  .desk__title {
-    display: block;
-  }
-
-  .mob__js {
-    display: none;
-  }
-
-  .desk__js {
-    display: block;
-  }
-
-  .project-6 h3,
-  .project-6 ul,
-  .project-6 button {
+  .project-card:nth-child(7) h3,
+  .project-card:nth-child(7) ul,
+  .project-card:nth-child(7) button {
     width: 95%;
     margin: 0 30px 0 24px;
   }
 
-  .project-6 h3 {
+  .project-card:nth-child(7) h3 {
     font-size: 40px;
     font-weight: 700;
     line-height: 32px;
   }
 
-  .project-6 li {
+  .project-card:nth-child(7) li {
     font-size: 20px;
     font-weight: 300;
     line-height: 1rem;
     padding: 12px 20px;
   }
 
-  .project-6 button {
+  .projects-cards-container :nth-child(7) h3:nth-child(1) {
+    display: none;
+  }
+
+  .projects-cards-container :nth-child(7) h3:nth-child(2) {
+    display: block;
+  }
+
+  .projects-cards-container :nth-child(7) li:nth-child(3) {
+    display: none;
+  }
+
+  .projects-cards-container :nth-child(7) li:nth-child(4) {
+    display: block;
+  }
+
+  .project-card:nth-child(7) button {
     height: 50px;
     width: 50%;
     margin-left: 5%;
     justify-content: center;
   }
 
-  .card1 {
+  .project-card:nth-child(2) {
     grid-area: 1/3/2/7;
     background-image: url(./images/firstProject.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .card2 {
+  .project-card:nth-child(3) {
     grid-area: 3/1/5/2;
   }
 
-  .card3 {
+  .project-card:nth-child(4) {
     grid-area: 5/1/7/4;
   }
 
-  .card4 {
+  .project-card:nth-child(5) {
     grid-area: 7/4/8/6;
   }
 
-  .card5 {
+  .project-card:nth-child(6) {
     grid-area: 4/5/6/7;
   }
 
-  .card6 {
+  .project-card:nth-child(7) {
     grid-area: 2/5/4/7;
     background-image: url(./images/sixthProject.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .projects__bg1 {
+  .background:nth-child(8) {
     background-image: url(./images/midGrid.svg);
     grid-area: 2/2/5/5;
     background-size: cover;
   }
 
-  .projects__bg2 {
+  .background:nth-child(9) {
     background-image: url(./images/rightGrid.svg);
     grid-area: 6/4/7/7;
     background-size: cover;
   }
 
-  .projects__bg3 {
+  .background:nth-child(10) {
     background-image:
       url(./images/bottomMidGrid.svg),
       url(./images/leftGrid.svg);
@@ -923,11 +931,11 @@ footer {
     gap: 32px;
   }
 
-  .social-list li {
+  .social__Link {
     transition-duration: 0.5s;
   }
 
-  .social-list li:hover {
+  .social__link:hover {
     transform: scale(1.5);
   }
 }
