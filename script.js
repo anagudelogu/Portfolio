@@ -167,7 +167,7 @@ function loadBackgroundDivs() {
   for (let w = 0; w < 3; w += 1) {
     const div = createDiv.cloneNode(true);
     div.classList.add('background');
-    projectsContainer.appendChild(div);
+    projectsCardsContainer.appendChild(div);
   }
 }
 
