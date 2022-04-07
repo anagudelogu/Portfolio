@@ -193,7 +193,9 @@ function loadPopup() {
   const sourceBtn = createButton.cloneNode(true);
   const popupFlowContainer = createDiv.cloneNode(true);
   const flowLeft = createSpan.cloneNode(true);
+  const flowLeftArr = createImg.cloneNode(true);
   const flowRight = createSpan.cloneNode(true);
+  const flowRightArr = createImg.cloneNode(true);
 
   projectsContainer.appendChild(projectPopup);
   projectPopup.classList.add('project__popup');
@@ -236,7 +238,14 @@ function loadPopup() {
   popupFlowContainer.classList.add('popup__flowContainer');
   popupFlowContainer.append(flowLeft, flowRight);
   flowLeft.classList.add('flow__left');
+  flowLeft.innerText = 'Previous project';
+  flowLeft.appendChild(flowLeftArr);
+  flowLeftArr.src = './images/ic_arrow_right.svg';
   flowRight.classList.add('flow__right');
+  flowRight.innerText = 'Next project';
+  flowRight.appendChild(flowRightArr);
+  flowRightArr.src = './images/ic_arrow_right.svg';
+
 }
 
 loadPopup();

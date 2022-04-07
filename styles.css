@@ -913,6 +913,13 @@ footer {
 
   .project__popup {
     border: solid var(--darkblue) 70px;
+    overflow-x: hidden;
+  }
+
+  .popup__close {
+    margin-top: 50px;
+    padding-left: 93%;
+    cursor: pointer;
   }
 
   .popup__title {
@@ -955,6 +962,47 @@ footer {
 
   .popup__btnContainer {
     width: 55%;
+  }
+
+  .popup__btnContainer .button {
+    margin: 10px 30px 100px 0;
+  }
+
+  .popup__btnContainer .button:hover {
+    background-color: var(--darkblue);
+    color: var(--white);
+  }
+
+  .popup__flowContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin: 0 auto 200px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+  }
+
+  .flow__left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+
+  .flow__left img {
+    transform: rotate(180deg);
+    order: -1;
+  }
+
+  .flow__right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
   }
 
   /* About section */
