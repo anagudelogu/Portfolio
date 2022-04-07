@@ -32,7 +32,8 @@ const createPara = document.createElement('p');
 
 const projects = [
   {
-    title: 'Project name goes here',
+    id: '0',
+    title: ['Project name goes here'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     img: ['./images/firstProject.svg', 'Project One'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
@@ -42,7 +43,8 @@ const projects = [
     buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
   },
   {
-    title: 'Project name goes here',
+    id: '1',
+    title: ['Project name goes here', 'Project name goes...'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     img: ['./images/secondProject.svg', 'Project Two'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
@@ -52,7 +54,8 @@ const projects = [
     buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
   },
   {
-    title: 'Project name goes here',
+    id: '2',
+    title: ['Project name goes here'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     img: ['./images/thirdProject.svg', 'Project Three'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
@@ -62,7 +65,8 @@ const projects = [
     buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
   },
   {
-    title: 'Project name goes here',
+    id: '3',
+    title: ['Project name goes here', 'Project name goes...'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     img: ['./images/fourthProject.svg', 'Project Four'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
@@ -72,7 +76,8 @@ const projects = [
     buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
   },
   {
-    title: 'Project name goes here',
+    id: '4',
+    title: ['Project name goes here', 'Project name goes...'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     img: ['./images/fifthProject.svg', 'Project Five'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
@@ -82,7 +87,8 @@ const projects = [
     buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
   },
   {
-    title: 'Project name goes here',
+    id: '5',
+    title: ['Project name goes here', 'Project name goes...'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     img: ['./images/sixthProject.svg', 'Project Six'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
@@ -93,7 +99,6 @@ const projects = [
   },
 ];
 
-
 function loadCardData() {
   for (let i = 0; i < projects.length; i += 1) {
     const card = createArticle.cloneNode(true);
@@ -103,7 +108,8 @@ function loadCardData() {
     const list = createUList.cloneNode(true);
     const button = createButton.cloneNode(true);
     const { tech } = projects[i];
-    const { title } = projects[i];
+    const titleMobile = projects[i].title[0];
+    const titleDesktop = projects[i].title[1];
     const imageSrc = projects[i].img[0];
     const imageAlt = projects[i].img[1];
     const btnMobileIcon = projects[i].buttonIcons[0];
@@ -119,7 +125,7 @@ function loadCardData() {
     textContainer.classList.add('projects-text');
     imageElement.classList.add('project__image');
     textContainer.append(cardTitle, list, button);
-    cardTitle.innerText = title;
+    cardTitle.innerText = titleMobile;
 
     for (let j = 0; j < tech.length; j += 1) {
       const listItem = createListItem.cloneNode(true);
@@ -130,12 +136,13 @@ function loadCardData() {
     button.classList.add('button', 'projects-button', 'btn-bg-dark');
     button.innerText = 'See this project';
     button.setAttribute('id', i);
-    button.setAttribute('onClick', `reply_click(${i}); togglePopup()`);
 
-    if (i === 5) {
+    if (projects[i].title.length > 1) {
       const cardTitle = document.createElement('h3');
-      textContainer.insertBefore(cardTitle, textContainer.children[1]);
-      cardTitle.innerText = 'Project name goes...';
+      list.classList.add('small__img');
+      cardTitle.classList.add('projects__desktopTitle');
+      textContainer.insertBefore(cardTitle, textContainer.children[0]);
+      cardTitle.innerText = titleDesktop;
       const listItem = createListItem.cloneNode(true);
       list.appendChild(listItem);
       listItem.innerText = '+1';
@@ -245,60 +252,66 @@ function loadPopup() {
   flowRight.innerText = 'Next project';
   flowRight.appendChild(flowRightArr);
   flowRightArr.src = './images/ic_arrow_right.svg';
-
 }
 
 loadPopup();
 
-function reply_click(id) {
-  const temp = document.getElementById(id).getAttribute('id');
-
-  const cardTitle = document.querySelector('.popup__title');
-  cardTitle.innerText = projects[temp].title;
-
-  const cardList = document.querySelector('.popup__list');
-  const cardTechnologies = document.querySelectorAll('.popup__listItem');
-  for (let k = 0; k < cardTechnologies.length; k += 1) {
-    const listItem = cardList.children[k];
-    listItem.innerText = projects[temp].tech[k];
-  }
-
-  const carouselImg = document.querySelectorAll('.carousel__image');
-  const carouselCont = document.querySelector('.popup__carouselContainer');
-  for (let j = 0; j < carouselImg.length; j += 1) {
-    const img = carouselCont.children[j];
-    img.src = projects[temp].img[0];
-  }
-
-  const paragraphs = document.querySelectorAll('.popup__paragraph');
-  for (let p = 0; p < paragraphs.length; p += 1) {
-    const para = document.querySelector('.project__popup');
-    para.children[p + 4].innerText = projects[temp].desc[p];
-  }
-
-  const btnLive = document.querySelector('.btn__live');
-  btnLive.innerText = projects[temp].liveVersionLink[0];
-  const liveIcon = createImg.cloneNode(true);
-  btnLive.appendChild(liveIcon);
-  liveIcon.setAttribute('alt', 'Icon');
-  liveIcon.src = projects[temp].liveVersionLink[1];
-  const btnSrc = document.querySelector('.btn__source');
-  btnSrc.innerText = projects[temp].sourceLink[0];
-  const sourceIcon = createImg.cloneNode(true);
-  btnSrc.appendChild(sourceIcon);
-  sourceIcon.setAttribute('alt', 'Icon');
-  sourceIcon.src = projects[temp].sourceLink[1][0];
-}
-
 const popupContainer = document.querySelector('.project__popup');
 const popupClose = document.querySelector('.popup__close');
-
-function togglePopup() {
-  popupContainer.classList.toggle('active');
-  body.classList.toggle('noScroll');
-}
-
 popupClose.addEventListener('click', () => {
   popupContainer.classList.toggle('active');
   body.classList.toggle('noScroll');
 });
+
+const buttonsNodeList = document.querySelectorAll('.projects-button');
+Array.from(buttonsNodeList).forEach((btn) => btn.addEventListener('click', (event) => {
+  projects.filter((project) => {
+    if (event.target.id === project.id) {
+      const cardTitle = document.querySelector('.popup__title');
+      const popTitle = project.title[0];
+      cardTitle.innerText = popTitle;
+
+      const cardList = document.querySelector('.popup__list');
+      const cardTechnologies = document.querySelectorAll('.popup__listItem');
+      for (let k = 0; k < cardTechnologies.length; k += 1) {
+        const listItem = cardList.children[k];
+        listItem.innerText = project.tech[k];
+      }
+
+      const carouselImg = document.querySelectorAll('.carousel__image');
+      const carouselCont = document.querySelector('.popup__carouselContainer');
+      const imgSrc = project.img[0];
+      for (let j = 0; j < carouselImg.length; j += 1) {
+        const img = carouselCont.children[j];
+        img.src = imgSrc;
+      }
+
+      const paragraphs = document.querySelectorAll('.popup__paragraph');
+      for (let p = 0; p < paragraphs.length; p += 1) {
+        const para = document.querySelector('.project__popup');
+        para.children[p + 4].innerText = project.desc[p];
+      }
+
+      const btnLiveText = project.liveVersionLink[0];
+      const btnLive = document.querySelector('.btn__live');
+      btnLive.innerText = btnLiveText;
+      const liveIcon = createImg.cloneNode(true);
+      btnLive.appendChild(liveIcon);
+      liveIcon.setAttribute('alt', 'Icon');
+      const liveIconSrc = project.liveVersionLink[1];
+      liveIcon.src = liveIconSrc;
+      const btnSrc = document.querySelector('.btn__source');
+      const srcIconText = project.sourceLink[0];
+      btnSrc.innerText = srcIconText;
+      const sourceIcon = createImg.cloneNode(true);
+      btnSrc.appendChild(sourceIcon);
+      sourceIcon.setAttribute('alt', 'Icon');
+      const srcIconSrc = project.sourceLink[1][0];
+      sourceIcon.src = srcIconSrc;
+
+      popupContainer.classList.toggle('active');
+      body.classList.toggle('noScroll');
+    }
+    return project;
+  });
+}));
