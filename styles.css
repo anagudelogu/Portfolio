@@ -1147,7 +1147,7 @@ footer {
   }
 
   .error {
-    color: red;
+    color: rgba(255, 0, 0, 0.781);
   }
 
   /* Footer section */

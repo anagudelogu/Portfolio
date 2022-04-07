@@ -345,7 +345,7 @@ function emailValid(input, msg) {
   return showSuccess(input);
 }
 const form = document.querySelector('form');
-const EMAIL_INV = 'Please, enter a valid lowercase email.';
+const EMAIL_INV = 'Please, enter a valid lowercase email..';
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
