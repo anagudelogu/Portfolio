@@ -318,29 +318,28 @@ Array.from(buttonsNodeList).forEach((btn) => btn.addEventListener('click', (even
 
 // Form validation
 
-function showMessage(input, msg, type){
-  let message = input.parentNode.querySelector('small');
+function showMessage(input, msg, type) {
+  const message = input.parentNode.querySelector('small');
   message.innerText = msg;
-  console.log(type);
-  if (type === false){
+  if (type === false) {
     message.classList.toggle('error');
   }
   return type;
 }
 
-function showSuccess(input){
+function showSuccess(input) {
   return showMessage(input, '', true);
 }
 
-function showError(input, msg){
+function showError(input, msg) {
   return showMessage(input, msg, false);
 }
 
-function emailValid (input, msg){
+function emailValid(input, msg) {
   const emailValue = input.value.trim();
   const emailComparisson = input.value.toLowerCase().trim();
 
-  if (emailValue !== emailComparisson){
+  if (emailValue !== emailComparisson) {
     return showError(input, msg);
   }
   return showSuccess(input);
@@ -350,8 +349,8 @@ const EMAIL_INV = 'Please, enter a valid lowercase email.';
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  let emailV = emailValid(form.elements['email'], EMAIL_INV);
-  if (emailV){
-    form.submit()
+  const emailV = emailValid(form.elements.email, EMAIL_INV);
+  if (emailV) {
+    form.submit();
   }
-})
+});
