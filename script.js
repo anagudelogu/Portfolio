@@ -315,3 +315,43 @@ Array.from(buttonsNodeList).forEach((btn) => btn.addEventListener('click', (even
     return project;
   });
 }));
+
+// Form validation
+
+function showMessage(input, msg, type){
+  let message = input.parentNode.querySelector('small');
+  message.innerText = msg;
+  console.log(type);
+  if (type === false){
+    message.classList.toggle('error');
+  }
+  return type;
+}
+
+function showSuccess(input){
+  return showMessage(input, '', true);
+}
+
+function showError(input, msg){
+  return showMessage(input, msg, false);
+}
+
+function emailValid (input, msg){
+  const emailValue = input.value.trim();
+  const emailComparisson = input.value.toLowerCase().trim();
+
+  if (emailValue !== emailComparisson){
+    return showError(input, msg);
+  }
+  return showSuccess(input);
+}
+const form = document.querySelector('form');
+const EMAIL_INV = 'Please, enter a valid lowercase email.';
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  let emailV = emailValid(form.elements['email'], EMAIL_INV);
+  if (emailV){
+    form.submit()
+  }
+})

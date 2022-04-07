@@ -1146,6 +1146,10 @@ footer {
     display: block;
   }
 
+  .error {
+    color: red;
+  }
+
   /* Footer section */
   footer {
     flex-flow: row;
