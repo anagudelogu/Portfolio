@@ -20,69 +20,6 @@ function linkClicked() {
 hamburger.addEventListener('click', toggle);
 links.forEach((n) => n.addEventListener('click', linkClicked));
 
-const projects = [
-  {
-    title: 'Project name goes here 1',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/firstProject.svg', 'Project One'],
-    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-    liveVersionLink: ['See Live', './images/unionDark.svg'],
-    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
-    featured: true,
-    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
-  },
-  {
-    title: 'Project name goes here 2',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/secondProject.svg', 'Project Two'],
-    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-    liveVersionLink: ['See Live', './images/unionDark.svg'],
-    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
-    featured: false,
-    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
-  },
-  {
-    title: 'Project name goes here 3',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/thirdProject.svg', 'Project Three'],
-    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-    liveVersionLink: ['See Live', './images/unionDark.svg'],
-    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
-    featured: false,
-    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
-  },
-  {
-    title: 'Project name goes here 4',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/fourthProject.svg', 'Project Four'],
-    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-    liveVersionLink: ['See Live', './images/unionDark.svg'],
-    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
-    featured: false,
-    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
-  },
-  {
-    title: 'Project name goes here 5',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/fifthProject.svg', 'Project Five'],
-    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-    liveVersionLink: ['See Live', './images/unionDark.svg'],
-    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
-    featured: false,
-    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
-  },
-  {
-    title: 'Project name goes here 6',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/sixthProject.svg', 'Project Six'],
-    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-    liveVersionLink: ['See Live', './images/unionDark.svg'],
-    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
-    featured: false,
-    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
-  },
-];
-
 const createDiv = document.createElement('div');
 const createH3 = document.createElement('h3');
 const createArticle = document.createElement('article');
@@ -93,6 +30,70 @@ const createListItem = document.createElement('li');
 const createSpan = document.createElement('span');
 const createPara = document.createElement('p');
 
+const projects = [
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    img: ['./images/firstProject.svg', 'Project One'],
+    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    liveVersionLink: ['See Live', './images/unionDark.svg'],
+    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
+    featured: true,
+    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    img: ['./images/secondProject.svg', 'Project Two'],
+    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    liveVersionLink: ['See Live', './images/unionDark.svg'],
+    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
+    featured: false,
+    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    img: ['./images/thirdProject.svg', 'Project Three'],
+    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    liveVersionLink: ['See Live', './images/unionDark.svg'],
+    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
+    featured: false,
+    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    img: ['./images/fourthProject.svg', 'Project Four'],
+    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    liveVersionLink: ['See Live', './images/unionDark.svg'],
+    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
+    featured: false,
+    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    img: ['./images/fifthProject.svg', 'Project Five'],
+    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    liveVersionLink: ['See Live', './images/unionDark.svg'],
+    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
+    featured: false,
+    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
+  },
+  {
+    title: 'Project name goes here',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    img: ['./images/sixthProject.svg', 'Project Six'],
+    desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    liveVersionLink: ['See Live', './images/unionDark.svg'],
+    sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
+    featured: false,
+    buttonIcons: ['./images/Union.svg', './images/ic_arrow_right.svg'],
+  },
+];
+
+
 function loadCardData() {
   for (let i = 0; i < projects.length; i += 1) {
     const card = createArticle.cloneNode(true);
@@ -101,7 +102,6 @@ function loadCardData() {
     const cardTitle = createH3.cloneNode(true);
     const list = createUList.cloneNode(true);
     const button = createButton.cloneNode(true);
-
     const { tech } = projects[i];
     const { title } = projects[i];
     const imageSrc = projects[i].img[0];

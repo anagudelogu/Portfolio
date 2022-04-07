@@ -305,7 +305,7 @@ body {
 }
 
 .popup__listItem {
-  border: 0.52px solid #1a2236;
+  border: 0.5px solid #1a2236;
   padding: 6px 10px;
 }
 
@@ -909,6 +909,52 @@ footer {
       url(./images/leftGrid.svg);
     background-position: top right, top left;
     grid-area: 7/1/8/4;
+  }
+
+  .project__popup {
+    border: solid var(--darkblue) 70px;
+  }
+
+  .popup__title {
+    font-size: 60px;
+    line-height: 3rem;
+    width: 90%;
+  }
+
+  .popup__list {
+    gap: 20px;
+    width: 90%;
+    font-size: 20px;
+    line-height: 1rem;
+  }
+
+  .popup__listItem {
+    padding: 12px 20px;
+  }
+
+  .popup__carouselContainer {
+    width: 90%;
+    margin-bottom: 70px;
+  }
+
+  .popup__carouselLeftArrow {
+    left: 8%;
+  }
+
+  .popup__carouselLeftArrow img {
+    transform: scale(4);
+  }
+
+  .popup__carouselRightArrow img {
+    transform: scale(4);
+  }
+
+  .popup__paragraph {
+    width: 55%;
+  }
+
+  .popup__btnContainer {
+    width: 55%;
   }
 
   /* About section */
