@@ -357,9 +357,9 @@ form.addEventListener('submit', (event) => {
 
 // Load Storage
 
-const formName = form.elements[0];
-const formEmail = form.elements[1];
-const formText = form.elements[2];
+const formName = document.querySelector('#name');
+const formEmail = document.querySelector('#email');
+const formText = document.querySelector('#textarea');
 
 function storeData() {
   const formData = {
