@@ -35,7 +35,7 @@ const projects = [
     id: '0',
     title: ['Project name goes here'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/firstProject.svg', 'Project One'],
+    img: ['', 'Project One'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
     liveVersionLink: ['See Live', './images/unionDark.svg'],
     sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
@@ -46,7 +46,7 @@ const projects = [
     id: '1',
     title: ['Project name goes here', 'Project name goes...'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/secondProject.svg', 'Project Two'],
+    img: ['', 'Project Two'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
     liveVersionLink: ['See Live', './images/unionDark.svg'],
     sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
@@ -57,7 +57,7 @@ const projects = [
     id: '2',
     title: ['Project name goes here'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/thirdProject.svg', 'Project Three'],
+    img: ['', 'Project Three'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
     liveVersionLink: ['See Live', './images/unionDark.svg'],
     sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
@@ -68,7 +68,7 @@ const projects = [
     id: '3',
     title: ['Project name goes here', 'Project name goes...'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/fourthProject.svg', 'Project Four'],
+    img: ['', 'Project Four'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
     liveVersionLink: ['See Live', './images/unionDark.svg'],
     sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
@@ -79,7 +79,7 @@ const projects = [
     id: '4',
     title: ['Project name goes here', 'Project name goes...'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/fifthProject.svg', 'Project Five'],
+    img: ['', 'Project Five'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
     liveVersionLink: ['See Live', './images/unionDark.svg'],
     sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
@@ -90,7 +90,7 @@ const projects = [
     id: '5',
     title: ['Project name goes here', 'Project name goes...'],
     tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    img: ['./images/sixthProject.svg', 'Project Six'],
+    img: ['', 'Project Six'],
     desc: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi', 'Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
     liveVersionLink: ['See Live', './images/unionDark.svg'],
     sourceLink: ['See source', ['./images/ic_githubDark.svg', 'desktopImageSrc']],
@@ -309,7 +309,7 @@ Array.from(buttonsNodeList).forEach((btn) => btn.addEventListener('click', (even
       const srcIconSrc = project.sourceLink[1][0];
       sourceIcon.src = srcIconSrc;
 
-      popupContainer.classList.toggle('active');
+      popupContainer.classList.toggle('activ');
       body.classList.toggle('noScroll');
     }
     return project;
