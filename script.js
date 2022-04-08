@@ -354,3 +354,35 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+// Load Storage
+
+const formName = document.querySelector('#name');
+const formEmail = document.querySelector('#email');
+const formText = document.querySelector('#textarea');
+
+function storeData() {
+  const formData = {
+    name: formName.value,
+    email: formEmail.value,
+    text: formText.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+function loadData() {
+  if (!localStorage.getItem('formData')) {
+    storeData();
+  }
+  const localData = JSON.parse(localStorage.getItem('formData'));
+  formName.setAttribute('value', localData.name);
+  formEmail.setAttribute('value', localData.email);
+  formText.innerText = localData.text;
+}
+
+loadData();
+formName.addEventListener('change', storeData);
+formEmail.addEventListener('change', storeData);
+formText.addEventListener('change', storeData);
+
+Array.from(form.elements).forEach((formElement) => formElement.addEventListener('input', loadData));
