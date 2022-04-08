@@ -6,8 +6,9 @@ This is a clone of Figma portfolio template 5.
 
 ## Built With
 
-- Html
+- HTML
 - CSS
+- JavaScript
 
 ## Live Demo (if available)
 
@@ -37,22 +38,20 @@ To run a local copy of this project follow these simple steps.
 - Twitter: [@AgudeloAndres__](https://twitter.com/AgudeloAndres__)
 - LinkedIn: [Andres Agudelo Guzman](https://linkedin.com/in/aagst)
 
+👤 **Sunday Stanley**
+- GitHub: [@idungstanley](https://github.com/idungstanley)
+- Twitter: [@IdungStanley](https://twitter.com/IdungStanley)
+- LinkedIn: [Sunday (Idung) Stanley](https://www.linkedin.com/in/sundaystanley56)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/anagudelogu/Portfolio/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
